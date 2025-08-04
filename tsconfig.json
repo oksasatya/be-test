@@ -3,7 +3,7 @@
     "target": "ESNext",
     "module": "commonjs",
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".",
     "strict": true,
     "noUnusedLocals": true,
     "esModuleInterop": true,
@@ -27,6 +27,6 @@
       "$server/*": ["server/*"]
     }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "prisma/seeds/**/*"],
   "exclude": ["node_modules/*", "dist/*", "prisma/*"]
 }
