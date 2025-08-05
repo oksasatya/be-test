@@ -33,7 +33,7 @@ export function BadRequestWithMessage(message: string): ServiceResponse<{}> {
     data: {},
     err: {
       message,
-      code: 404
+      code: 400
     }
   }
 }

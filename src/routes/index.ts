@@ -18,8 +18,9 @@ router.get("/ping", (req: Request, res: Response) => {
   return response_success(res, "pong!");
 });
 
-
 router.use("/example", RoutesRegistry.ExampleRoutes)
+router.use("/users", RoutesRegistry.UserRoutes);
+router.use("/products", RoutesRegistry.ProductRoutes);
 
 
 router.all("*", (req: Request, res: Response) => {

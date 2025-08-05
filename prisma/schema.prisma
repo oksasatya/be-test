@@ -25,3 +25,21 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+enum ProductStatus {
+  pending
+  success
+  fail
+}
+
+model Product {
+  id       Int     @id @default(autoincrement())
+  sku      String  @unique
+  name     String
+  price    Int
+  stock    Int
+  category String
+  status   ProductStatus  @default(pending)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

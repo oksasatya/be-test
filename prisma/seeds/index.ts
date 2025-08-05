@@ -1,5 +1,5 @@
 import {seedAdmin} from "./seedAdmin";
-import {prisma} from "$utils/prisma.utils";
+import { prisma } from "../../src/utils/prisma.utils";
 
 async function seed(){
     // Seed Function Call Goes Here
